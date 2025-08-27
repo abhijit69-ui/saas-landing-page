@@ -1,8 +1,11 @@
+import Layout from './components/Layout';
+import Hero from './components/sections/Hero';
+
 const App = () => {
   return (
-    <>
-      <h1 className='text-2xl font-bold underline'>Hello</h1>
-    </>
+    <Layout title='EdgeAi'>
+      <Hero />
+    </Layout>
   );
 };
 
