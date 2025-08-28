@@ -1,21 +1,16 @@
+/* eslint-disable react-refresh/only-export-components */
 import Container from '../shared/Container';
 import logo from '/assets/icon.svg';
 import NavItem from '../shared/NavItem';
 import BtnLink from '../shared/BtnLink';
 import { useThemeStore } from '../../store/ThemeStore';
 
-interface NavItemData {
-  href: string;
-  text: string;
-}
-
-const navItems: NavItemData[] = [
+export const navItems = [
   { href: '#', text: 'Home' },
   { href: '#services', text: 'Services' },
   { href: '#about-us', text: 'About Us' },
   { href: '#pricing', text: 'Pricing' },
 ];
-
 const Navbar = () => {
   const { toggleTheme, theme } = useThemeStore();
   return (
